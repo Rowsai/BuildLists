@@ -1,0 +1,14 @@
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\bin\Release\net10.0\BuildLists.Tests.exe
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\bin\Release\net10.0\BuildLists.Tests.deps.json
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\bin\Release\net10.0\BuildLists.Tests.runtimeconfig.json
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\bin\Release\net10.0\BuildLists.Tests.dll
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\bin\Release\net10.0\BuildLists.Tests.pdb
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\obj\Release\net10.0\BuildLists.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\obj\Release\net10.0\BuildLists.Tests.AssemblyInfoInputs.cache
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\obj\Release\net10.0\BuildLists.Tests.AssemblyInfo.cs
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\obj\Release\net10.0\BuildLists.Tests.csproj.CoreCompileInputs.cache
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\obj\Release\net10.0\BuildLists.Tests.dll
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\obj\Release\net10.0\refint\BuildLists.Tests.dll
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\obj\Release\net10.0\BuildLists.Tests.pdb
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\obj\Release\net10.0\BuildLists.Tests.genruntimeconfig.cache
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\Tests\obj\Release\net10.0\ref\BuildLists.Tests.dll

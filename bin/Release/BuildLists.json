@@ -1,0 +1,20 @@
+{
+  "Author": "Build Lists",
+  "Name": "Build Lists",
+  "InternalName": "BuildLists",
+  "AssemblyVersion": "1.0.0.0",
+  "Description": "製作アイテムの検索、製作リストの保存、素材合算、所持品とリテイナー記録の照合。",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "crafting",
+    "inventory",
+    "lists"
+  ],
+  "DalamudApiLevel": 15,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "Punchline": "製作計画と素材を、ひとつのリストに。",
+  "AcceptsFeedback": true
+}

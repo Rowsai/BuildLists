@@ -1,0 +1,9 @@
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\bin\Release\icon.png
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\obj\Release\BuildLists.csproj.AssemblyReference.cache
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\obj\Release\BuildLists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\obj\Release\BuildLists.AssemblyInfoInputs.cache
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\obj\Release\BuildLists.AssemblyInfo.cs
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\obj\Release\BuildLists.csproj.CoreCompileInputs.cache
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\obj\Release\BuildLists.dll
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\bin\Release\BuildLists.deps.json
+C:\Users\t-k3-\Documents\Codex\2026-10-13\ff\outputs\BuildLists\bin\Release\BuildLists.dll

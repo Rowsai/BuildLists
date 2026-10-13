@@ -1,0 +1,2 @@
+Tool: built-in image_gen (not CLI)
+Use case: logo-brand. Create a single square plugin icon for Build Lists, a fantasy crafting materials checklist app. A beautifully crafted silver and warm brass crafting hammer crossing a small violet checklist ledger, three clearly visible checkmarks, tiny crystal accent. Dark charcoal violet background, luminous lavender edges, premium polished fantasy game UI inventory icon, clean strong silhouette legible at 64 pixels, centered composition, restrained details, no letters or words, no watermark. Full square image.
