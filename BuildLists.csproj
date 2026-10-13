@@ -1,12 +1,12 @@
-<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+﻿<Project Sdk="Dalamud.NET.Sdk/15.0.0">
   <PropertyGroup>
-    <Version>1.0.0.0</Version>
-    <Author>Build Lists</Author>
-    <Name>Build Lists</Name>
+    <Version>1.0.0.1</Version>
+    <Author>Artisan's Material Board</Author>
+    <Name>Artisan's Material Board</Name>
     <Punchline>製作計画と素材を、ひとつのリストに。</Punchline>
     <Description>製作アイテムの検索、製作リストの保存、素材合算、所持品とリテイナー記録の照合。</Description>
     <Tags>crafting;inventory;lists</Tags>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-  <ItemGroup><Content Include="icon.png" CopyToOutputDirectory="PreserveNewest" /><Compile Remove="Tests/**/*.cs" /></ItemGroup>
+  <ItemGroup><Content Include="icon*.png;Fonts/*" CopyToOutputDirectory="PreserveNewest" /><Compile Remove="Tests/**/*.cs" /></ItemGroup>
 </Project>

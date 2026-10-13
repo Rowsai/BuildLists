@@ -1,4 +1,4 @@
-using Dalamud.Game.Command;
+﻿using Dalamud.Game.Command;
 using Dalamud.Game;
 using Dalamud.IoC;
 using Dalamud.Plugin;
@@ -23,22 +23,28 @@ public sealed class Plugin : IDalamudPlugin
     public Dictionary<uint, CraftRecipe> Recipes { get; } = [];
     public int RecipeRevision { get; private set; }
     public InventoryTracker Inventory { get; }
+    public RetainerConfirmation Confirmation { get; }
     private readonly WindowSystem windows = new("BuildLists");
     private readonly MainWindow window;
     public Plugin()
     {
         Journal = new Journal(Log, Interface.GetPluginConfigDirectory());
         Config = Interface.GetPluginConfig() as Configuration ?? new();
+        Config.Retainers.Clear();
+        Journal.Info("プラグイン有効化: リテイナー記録をリセットしました。");
+        Save();
         LoadRecipes();
         Inventory = new InventoryTracker(this);
+        Confirmation = new RetainerConfirmation(this);
         window = new MainWindow(this);
         windows.AddWindow(window);
-        Commands.AddHandler("/buildlists", new CommandInfo(OnCommand) { HelpMessage = "Build Lists を開く" });
+        Commands.AddHandler("/buildlists", new CommandInfo(OnCommand) { HelpMessage = "Artisan's Material Board を開く" });
         Interface.UiBuilder.Draw += windows.Draw;
         Interface.UiBuilder.OpenMainUi += Open;
         Interface.UiBuilder.OpenConfigUi += Open;
         Framework.Update += Inventory.Update;
-        Journal.Info("Build Lists v1.0.0 起動 / API 15");
+        Framework.Update += Confirmation.Update;
+        Journal.Info("Artisan's Material Board v1.0.0.1 起動 / API 15");
         Journal.Warn("リテイナー所持数は前回取得の記録です。各リテイナーの所持品を開くと更新されます。");
     }
     public void LoadRecipes()
@@ -81,13 +87,17 @@ public sealed class Plugin : IDalamudPlugin
     private void Open() { window.IsOpen = true; Journal.Info("ウィンドウを開く"); }
     public void Dispose()
     {
+        Framework.Update -= Confirmation.Update;
+        Confirmation.Stop();
         Framework.Update -= Inventory.Update;
         Interface.UiBuilder.Draw -= windows.Draw;
         Interface.UiBuilder.OpenMainUi -= Open;
         Interface.UiBuilder.OpenConfigUi -= Open;
         Commands.RemoveHandler("/buildlists");
         windows.RemoveAllWindows();
+        window.Dispose();
         Save();
-        Journal.Info("Build Lists 終了");
+        Journal.Info("Artisan's Material Board 終了");
     }
 }
+

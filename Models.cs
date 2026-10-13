@@ -29,6 +29,18 @@ public sealed class RetainerSnapshot
     public DateTimeOffset Updated { get; set; }
     public Dictionary<uint, long> Items { get; set; } = [];
 }
+public static class RetainerCache
+{
+    public static bool IsFresh(RetainerSnapshot snapshot, DateTimeOffset now) => snapshot.Updated <= now && now - snapshot.Updated < TimeSpan.FromHours(24);
+    public static int Expire(Configuration config, DateTimeOffset now)
+    {
+        int removed = 0;
+        foreach (var records in config.Retainers.Values)
+            foreach (var id in records.Where(x => !IsFresh(x.Value, now)).Select(x => x.Key).ToArray())
+                if (records.Remove(id)) removed++;
+        return removed;
+    }
+}
 public sealed record Ingredient(uint ItemId, string Name, int Amount);
 public sealed record CraftRecipe(uint Id, string Name, string Job, int Yield, List<Ingredient> Ingredients, uint ResultItemId = 0);
 public static class Materials

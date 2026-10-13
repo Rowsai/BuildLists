@@ -1,4 +1,4 @@
-using Dalamud.Plugin.Services;
+﻿using Dalamud.Plugin.Services;
 
 namespace BuildLists;
 public sealed record LogEntry(DateTimeOffset Time, string Level, string Message);
@@ -24,7 +24,7 @@ public sealed class Journal(IPluginLog sink, string directory)
                 if (File.Exists(Path) && new FileInfo(Path).Length > 5_000_000) File.Move(Path, Path + ".1", true);
                 File.AppendAllText(Path, $"{entry.Time:O} [{level}] {message}{Environment.NewLine}");
             }
-            catch (Exception ex) { sink.Error(ex, "Build Lists: ログファイルの書き込みに失敗"); }
+            catch (Exception ex) { sink.Error(ex, "Artisan's Material Board: ログファイルの書き込みに失敗"); }
         }
         if (level == "ERROR") sink.Error(message);
         else if (level == "WARN") sink.Warning(message);
